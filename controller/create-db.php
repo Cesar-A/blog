@@ -11,8 +11,13 @@ die("Error: " . $connection-> connection_error);
 else{
     echo "Success: " . $connection->host_info;
 }
+
+$exists = $connection->select_db($database);
+
+if(!$exists) {
+    echo "Database does not exists";  
+}
+
+
+
 $connection->close();
-
-
-
-
