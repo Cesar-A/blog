@@ -8,16 +8,13 @@ if($connection->connect_error){
 die("Error: " . $connection-> connection_error);
     
 }
-else{
-    echo "Success: " . $connection->host_info;
-}
+//this selects the database file
 
 $exists = $connection->select_db($database);
-
+// checks if its able to connect to database
+//if statement is checking if the database exists
 if(!$exists) {
     echo "Database does not exists";  
 }
-
-
 
 $connection->close();
