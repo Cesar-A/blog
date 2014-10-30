@@ -26,6 +26,10 @@ else {
     echo "Database already exsist.";
 }
 
-$query = $connection->$query("CREATE TABLE post");
-
+$query = $connection->$query("CREATE TABLE post  ("
+        . "id int(11) NOT NULL AUTO_INCREMENT," //creatin id called 11
+        . "title varchar(255) NOT NULL,"
+        . "post text NOT NULL," //creating a new post
+        . "PRIMARY KEY (id))"); // setting this as primary key
+//created a query that 
 $connection->close();
