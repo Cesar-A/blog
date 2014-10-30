@@ -25,4 +25,7 @@ if($query){
 else {
     echo "Database already exsist.";
 }
+
+$query = $connection->$query("CREATE TABLE post");
+
 $connection->close();
