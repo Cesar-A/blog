@@ -10,13 +10,13 @@ $post = filter_input(INPUT_POST,"post",FILTER_SANITIZE_STRING);//inputs post to 
 echo "<p> Title: $title</p>";//echos out title
 echo "<p> Post: $post</p>";//echos out post
 
-$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post' ");
+$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post' "); //connects post to the query
 
 if($query) {
-    echo "<p> successfully inserted post: $title</p>";
+    echo "<p> successfully inserted post: $title</p>";//if the query does exsit it will display this 
 }
 else{
-    echo "<p>$connection->error</p>";
+    echo "<p>$connection->error</p>"; //if the query does not exsit it will display this 
 }
 $connection->close();
 
