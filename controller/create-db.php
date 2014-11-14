@@ -13,6 +13,7 @@ die("Error: " . $connection-> connection_error);
 $exists = $connection->select_db($database);
 // checks if its able to connect to database
 //if statement is checking if the database exists
+
 if(!$exists) {
     $query = $connection->query("CREATE DATABASE $database"); 
 
