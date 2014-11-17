@@ -5,8 +5,9 @@
         <group>
             <file>file:/C:/xampp/htdocs/Arroyoc-blog/view/form.php</file>
             <file>file:/C:/xampp/htdocs/Arroyoc-blog/controller/create-post.php</file>
+            <file>file:/C:/xampp/htdocs/Arroyoc-blog/model/config.php</file>
             <file>file:/C:/xampp/htdocs/Arroyoc-blog/post.php</file>
-            <file>file:/C:/xampp/htdocs/Arroyoc-blog/model/database.php</file>
+            <file>file:/C:/xampp/htdocs/Arroyoc-blog/model/Database.php</file>
             <file>file:/C:/xampp/htdocs/Arroyoc-blog/view/navigation.php</file>
             <file>file:/C:/xampp/htdocs/Arroyoc-blog/index.php</file>
             <file>file:/C:/xampp/htdocs/Arroyoc-blog/controller/create-db.php</file>
