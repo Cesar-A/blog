@@ -6,14 +6,16 @@ class Database{
     private $password ;
     private $database;
     
-    public function __construct($host, $username, $password, $database){
-        $this->host = $host;
+    public function __construct($host, $username, $password, $database){ //created a public function which allows 
+        $this->host = $host;                                               // the user to access the information 
         $this->host = $username;
         $this->host = $password;
         $this->host = $database;    
     }
     public function openConnection () {
-    }
+    }                                   //__construct() is the name for the constructor. 
+                                        //The constructor becomes a object after it has been created
+                                         //it then can be used to store code
     public function closeConnection () {
         
     }
