@@ -9,7 +9,6 @@ class Database {
     private $database;
 
     public function __construct($host, $username, $password, $database) { //created a public function which allows 
-        
         $this->host = $host;                                               // the user to access the information 
         $this->host = $username;
         $this->host = $password;
@@ -18,7 +17,7 @@ class Database {
 
     public function openConnection() {
         $this->connection = new mysqli($this->$host, $this->username, $this->password, $this->databaase);
-        
+
         if ($this->$connection->connect_error) {
             die("Error: " . $this->connection->connection_error);
         }
@@ -29,18 +28,18 @@ class Database {
     //it then can be used to store code
 
     public function closeConnection() {
-        if(isset ($this->connection)){
-            $this->connection->close();   
-         }
+        if (isset($this->connection)) {
+            $this->connection->close();
+        }
     }
 
     public function query($string) {
         $this->openConnection();
-        
+
         $query = $this->connection->query($string);
 
         $this->closeConnection();
-        
+
         return $query;
     }
 

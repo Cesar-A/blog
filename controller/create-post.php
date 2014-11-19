@@ -17,5 +17,5 @@ if ($query) {
 } else {
     echo "<p>$connection->error</p>"; //if the query does not exsit it will display this 
 }
-$connection->close();
+
 
