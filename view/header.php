@@ -11,4 +11,3 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="main.css">
         <title></title>
     </head>
-    

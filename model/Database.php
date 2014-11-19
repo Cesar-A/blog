@@ -29,7 +29,9 @@ class Database {
     //it then can be used to store code
 
     public function closeConnection() {
-        
+        if(isset ($this->connection)){
+            $this->connection->close();   
+         }
     }
 
     public function query($string) {
