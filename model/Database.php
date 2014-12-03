@@ -8,8 +8,6 @@ class Database {
     private $password;
     private $database;
     public $error;
-        
-    
 
     public function __construct($host, $username, $password, $database) { //created a public function which allows 
         $this->host = $host;                                               // the user to access the information 
@@ -63,8 +61,8 @@ class Database {
         $this->openConnection();
 
         $query = $this->connection->query($string);
-        
-        if(!$query){
+
+        if (!$query) {
             $this->error = $this->connection->error;
         }
 
